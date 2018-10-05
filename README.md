@@ -1,1 +1,1 @@
-# fuzzy-tribble
+# Strategic Player
