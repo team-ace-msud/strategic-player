@@ -37,3 +37,7 @@ mvn package
 cd target
 java -jar <jar file name>
 ~~~
+### Authors
+* Emenu Dobamo ([Emenu](https://github.com/emenuDobamo))
+* Anna Nguyen ([Anna](https://github.com/tramanh305))
+* Zachary Champion ([Zach](https://github.com/zchampion))
