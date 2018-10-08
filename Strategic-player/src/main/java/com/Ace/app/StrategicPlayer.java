@@ -1,10 +1,9 @@
 package com.Ace.app;
-
 /**
  * A player of the Spin-the-Wheel Coin Matching Game.
  *
- * @author Dr. Jody Paul
- * @version 1.1.0 (20181004)
+ * @author CS4250 Fall 2018
+ * @version 1.2.2 (20181004)
  */
 public interface StrategicPlayer {
     /**
@@ -17,13 +16,13 @@ public interface StrategicPlayer {
 
     /**
      * Provides the request pattern for the current turn.
-     * The returned pattern is a copy of the parameter
-     * in which a '?' replaces '-' in exactly the number
-     * of places as the permitted reveals-per-spin.
-     * @param blankPattern a proper-length pattern consisting of all '-'
-     * @return a proper reveal-pattern consisting of '-' and '?'
+     * The returned pattern is of proper length, contains only
+     * '?' and '-', and has exactly the number of '?'
+     * as the permitted reveals per spin.
+     * @return a proper reveal-pattern consisting of '-' and '?' with
+     *         exactly the number of '?' as permitted by reveals-per-spin
      */
-    CharSequence getSlotsToReveal(CharSequence blankPattern);
+    CharSequence getSlotsToReveal();
 
     /**
      * Provides the coin-state set pattern for the current turn.
