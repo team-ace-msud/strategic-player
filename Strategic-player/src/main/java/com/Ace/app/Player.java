@@ -26,12 +26,13 @@ public class Player implements StrategicPlayer {
     Random random = new Random();
     coinState = new StringBuilder();
         for(int i = 0; i < coinsPerWheel; i++) {
-            if(random.nextBoolean() == true) {
-                ((StringBuilder) coinState).append(" -");
-            }
-            else if(revealsPerSpin > 0) {
-                ((StringBuilder) coinState).append(" ?");
+            if(revealsPerSpin > 0) {
+                ((StringBuilder) coinState).append("?");
                 revealsPerSpin--;
+
+            }
+            else {
+                ((StringBuilder) coinState).append("-");
             }
 
 
@@ -42,6 +43,19 @@ public class Player implements StrategicPlayer {
 
     @Override
     public CharSequence getNewCoinStates(CharSequence revealedPattern) {
+        CharSequence newCharSequence = new StringBuilder();
+        System.out.println(revealedPattern);
+
+        for (int i = 0; i < 4; i ++){
+            if(revealedPattern.charAt(i) == '?'){
+                ((StringBuilder) newCharSequence).append('H');
+            }
+            else {
+                ((StringBuilder) newCharSequence).append('-');
+
+            }
+        }
+        System.out.println(newCharSequence);
 
         return null;
     }

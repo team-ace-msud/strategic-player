@@ -12,6 +12,7 @@ public class App
         Player player = new Player();
         player.beginGame(4,2,10);
 
-        System.out.println(player.getSlotsToReveal());
-    }
+
+        player.getNewCoinStates(player.getSlotsToReveal());
+        }
 }
