@@ -37,6 +37,7 @@ mvn package
 cd target
 java -jar <jar file name>
 ~~~
+vist the [website](https://team-ace-msud.github.io/strategic-player/) for more information.
 ### Authors
 * Emenu Dobamo ([Emenu](https://github.com/emenuDobamo))
 * Anna Nguyen ([Anna](https://github.com/tramanh305))
